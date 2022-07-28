@@ -6,11 +6,15 @@ function GoalItem({ goal }) {
 
   return (
     <div className='goal'>
-      <div>{new Date(goal.createdAt).toLocaleString('en-US')}</div>
-      <h2>{goal.text}</h2>
-      <button onClick={() => dispatch(deleteGoal(goal._id))} className='close'>
-        X
-      </button>
+      <ul>
+        <li>{new Date(goal.createdAt).toLocaleString('pt-BR')}</li>
+        <li><h2>{goal.text}</h2></li>
+        <li>
+          <button onClick={() => dispatch(deleteGoal(goal._id))} className='close'>
+            X
+          </button>
+        </li>
+      </ul>
     </div>
   )
 }

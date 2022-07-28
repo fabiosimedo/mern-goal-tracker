@@ -86,17 +86,31 @@ h3 {
   color: #828282;
 }
 
-.goals {
+/* .goals {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+} */
+.goals {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .goal {
-  background-color: #f4f4f4;
-  margin: 10px 0;
-  padding: 20px 0 10px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  margin-top: 1rem;
   position: relative;
+  width: 100%;
+}
+
+.text-align-div {
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.valor-total {
+  background-color: tomato;
 }
 
 .goal .close {
@@ -107,6 +121,18 @@ h3 {
   border: none;
   background: none;
 }
+
+.close { color: red; }
+.close:hover { 
+  background-color: rgba(255, 0, 0, 0.1); 
+  padding: .8rem;
+  border-radius: 5px;
+}
+
+footer {
+  height: 3vh;
+}
+
 
 .form,
 .content {

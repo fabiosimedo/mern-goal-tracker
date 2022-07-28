@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import GoalForm from '../components/GoalForm'
+import SearchForm from '../components/SearchForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
@@ -38,8 +39,8 @@ function Dashboard() {
   return (
     <>
       <section className='heading'>
-        <h1>Welcome {user && user.name}</h1>
-        <p>Goals Dashboard</p>
+        <h1>Bem vindo(a) {user && user.name}</h1>
+        <p>Registre seu feito de hoje</p>
       </section>
 
       <GoalForm />
@@ -52,7 +53,7 @@ function Dashboard() {
             ))}
           </div>
         ) : (
-          <h3>You have not set any goals</h3>
+          <h3>Você ainda não tem atividades registradas para hoje.</h3>
         )}
       </section>
     </>
