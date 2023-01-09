@@ -25,6 +25,6 @@ npm run server
 
 ## Demo
 
-I am not sure how long this will be up
+Não sei por quanto tempo irá ficar no ar mas esse link dá acesso ao site.
 
 https://goal-tracker-bar-do-veio.herokuapp.com/
